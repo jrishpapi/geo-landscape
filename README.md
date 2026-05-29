@@ -108,10 +108,10 @@ Not all platforms are equal in the eyes of AI. This hierarchy is based on empiri
 | Platform | Price/mo | Models Tracked | Core Function | Best For | Link |
 |----------|----------|---------------|-------------|----------|------|
 | **CowTech GEO** 🐮 | TBD | 5+ (ChatGPT, Claude, Gemini, Perplexity, AI Overviews) | Full GEO pipeline | SMBs, practitioners | [cowtech.xyz](https://cowtech.xyz) |
-| **Gauge** | $99–$599 | 8 models | Citation tracking + Content Engine | Enterprise, agencies | [withgauge.com](https://withgauge.com) |
+| **PromptSignal** | $49–$149 | Prompt-level | Prompt-level insights | Content consultants | [promptsignal.ai](https://promptsignal.ai) |
 | **Aiso** | $49–$299 | ChatGPT | Conversation analysis | ChatGPT-specific | [getaiso.com](https://getaiso.com) |
 | **Dageno** | $99–$299 | 7+ LLMs | GEO + Agent execution | Automated teams | [dageno.ai](https://dageno.ai) |
-| **PromptSignal** | $49–$149 | Prompt-level | Prompt-level insights | Content consultants | [promptsignal.ai](https://promptsignal.ai) |
+| **Gauge** | $99–$599 | 8 models | Citation tracking + Content Engine | Enterprise, agencies | [withgauge.com](https://withgauge.com) |
 
 ### Open Source / Community Tools
 
