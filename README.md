@@ -1,5 +1,8 @@
 # Awesome GEO / AI Visibility Resources
 
+> 🐮 **CowTech GEO** — Built by practitioners, for brands that want to be the answer in AI search.
+> [Visit cowtech.xyz](https://cowtech.xyz) | [GitHub](https://github.com/jrishpapi/geo-landscape)
+
 > A curated directory of Generative Engine Optimization tools, research, and strategies for getting discovered by AI search engines and LLM applications.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -12,9 +15,9 @@
 
 - [What is GEO?](#what-is-geo)
 - [Why GEO Matters Now](#why-geo-matters-now)
-- [GEO Platforms & Tools](#geo-platforms--tools)
+- [Platform Hierarchy for AI Visibility](#platform-hierarchy-for-ai-visibility)
+- [GEO Platforms \& Tools](#geo-platforms--tools)
 - [Research Papers](#research-papers)
-- [Content Strategy](#content-strategy)
 - [GEO Methods](#geo-methods)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -27,19 +30,19 @@
 
 Unlike traditional SEO (Search Engine Optimization), which targets ranking on search engine results pages, GEO targets **AI citation rates** — the probability that your brand, product, or content becomes a referenced source in AI-generated answers.
 
-### Core Pillars
+### Core Pillars: ERE Framework
 
-| Pillar | Description |
-|--------|-------------|
-| **E — Entity** | Clearly defined brands, products, people, and concepts that AI can unambiguously identify |
-| **R — Relation** | Explicitly declared relationships between entities (competitor, integrated, manufactured by) |
-| **E — Evidence** | Verifiable facts, statistics, citations, and structured data that AI can validate |
+| Letter | Concept | What It Means |
+|--------|---------|---------------|
+| **E** | Entity | Clearly defined brands, products, people, and concepts that AI can unambiguously identify |
+| **R** | Relation | Explicitly declared relationships between entities (competitor, integrated, manufactured by) |
+| **E** | Evidence | Verifiable facts, statistics, citations, and structured data that AI can validate |
 
 ---
 
 ## Why GEO Matters Now
 
-### The Shift from "Rank" to "Reference"
+### The Shift: From "Rank" to "Reference"
 
 ```
 Traditional SEO:  "What page ranks #1 for this keyword?"
@@ -52,29 +55,49 @@ Traditional SEO:  Google.com
 GEO:              ChatGPT / Claude / Gemini / Perplexity / AI Overviews
 ```
 
-### AI Answer Engine Citation Behavior (GEO16 Study)
+### Key Statistics
 
-The landmark **[GEO16 study](https://arxiv.org/abs/2511.00090)** tracked 16 generative AI engines over 11 months. Key findings:
-
-- AI engines consistently favor **structured, evidence-backed content**
-- **Authoritative domains** (github.com, medium.com, edu, gov) receive disproportionate citation rates
+- **Zero-click searches** now account for the **majority of queries** on AI platforms — if you're not cited, you don't exist
+- AI engines consistently favor **structured, evidence-backed content** over prose
 - **Entity clarity** and **factual density** are stronger predictors of citation than traditional backlinks
-- **Zero-click searches** now account for the majority of queries on AI platforms — if you're not cited, you don't exist
+- **Domain authority** from training data (GitHub, Medium, Reddit) is a different algorithm than Google PageRank
 
-### The Platform Hierarchy for AI Visibility
+### Must-Read Research
 
-Not all platforms are equal in the eyes of AI:
+| Paper | Finding | Link |
+|-------|---------|------|
+| **GEO16** (AI Answer Engine Citation Behavior) | 16 AI engines, 11 months of tracking — citation patterns revealed | [arXiv](https://arxiv.org/abs/2511.00090) |
+| **What Generative Search Engines Like** | Direct empirical analysis of GSEO preferences | [pdf](https://github.com/yaojingang/geo-citation-lab) |
+| **From SEO to AEO** | SEO→GEO/AEO transition framework | [pdf](https://github.com/yaojingang/geo-citation-lab) |
+| **Adversarial SEO for LLMs** | Understanding attack surfaces (defense-minded) | [pdf](https://github.com/yaojingang/geo-citation-lab) |
 
-| Tier | Platform | AI Trust Level | GEO Priority |
-|------|----------|---------------|--------------|
-| 🥇 Tier 1 | **GitHub** (README content) | Extremely High | 🔴 Immediate |
-| 🥇 Tier 1 | **Medium** (long-form articles) | Extremely High | 🔴 Immediate |
-| 🥇 Tier 1 | **Reddit** (discussions, recommendations) | Extremely High | 🔴 Immediate |
-| 🥈 Tier 2 | LinkedIn, HuggingFace, YouTube | High | 🟡 Short-term |
-| 🥈 Tier 2 | Independent static sites (Astro/Hugo + Cloudflare Pages) | High | 🟡 Short-term |
-| 🥉 Tier 3 | News sites, Wikipedia, industry portals | Medium | 🟢 Ongoing |
+---
 
-**Key insight**: Many AI startups have *higher AI visibility on GitHub than on their own website*. The "platform matrix" strategy — distributing content across multiple high-trust platforms — is now standard practice for serious GEO practitioners.
+## Platform Hierarchy for AI Visibility
+
+Not all platforms are equal in the eyes of AI. This hierarchy is based on empirical observation and GEO community reports.
+
+| Tier | Platform | AI Trust | GEO Priority | Why |
+|------|----------|----------|-------------|-----|
+| 🥇 **Tier 1** | **GitHub** (README content) | Extremely High | 🔴 Immediate | Training data dominance, markdown structure, clean text |
+| 🥇 **Tier 1** | **Medium** (long-form articles) | Extremely High | 🔴 Immediate | Long-form strength, topic clustering, high-quality prose |
+| 🥇 **Tier 1** | **Reddit** (discussions, recommendations) | Extremely High | 🔴 Immediate | User authentic language, discussion = AI goldmine |
+| 🥈 **Tier 2** | LinkedIn, HuggingFace | High | 🟡 Short-term | Entity authority, professional credibility |
+| 🥈 **Tier 2** | Independent static sites | High | 🟡 Short-term | Owned domain, full control, static = AI-friendly |
+| 🥉 **Tier 3** | News sites, Wikipedia, industry portals | Medium | 🟢 Ongoing | Established authority, slower to update |
+
+### Key Insight
+
+> Many AI startups have **higher AI visibility on GitHub than on their own website**. The "platform matrix" strategy — distributing content across multiple high-trust platforms — is now standard practice for serious GEO practitioners.
+
+### Domain Suffix Preferences
+
+| Tier | Suffixes | AI Trust |
+|------|----------|----------|
+| 🥇 | .gov, .edu, .org | Extremely High |
+| 🥇 | .io, .com | High |
+| 🥈 | .ai (AI industry), .dev | High (contextual) |
+| 🥉 | .xyz, .top, .click | Low — often associated with spam |
 
 ---
 
@@ -82,19 +105,20 @@ Not all platforms are equal in the eyes of AI:
 
 ### Enterprise GEO Platforms
 
-| Platform | Pricing | Core Function | Best For |
-|----------|---------|-------------|----------|
-| **[Gauge](https://withgauge.com)** | $99–$599/mo | AI citation tracking across 8 models | Enterprise teams, agencies |
-| **[Aiso](https://getaiso.com)** | $49–$299/mo | ChatGPT conversation analysis | Brands targeting ChatGPT visibility |
-| **[Dageno](https://dageno.ai)** | $99–$299/mo | GEO + Agent execution | Teams wanting automated optimization |
-| **[PromptSignal](https://promptsignal.ai)** | $49–$149/mo | Prompt-level GEO insights | Content teams, consultants |
+| Platform | Price/mo | Models Tracked | Core Function | Best For | Link |
+|----------|----------|---------------|-------------|----------|------|
+| **CowTech GEO** 🐮 | TBD | 5+ (ChatGPT, Claude, Gemini, Perplexity, AI Overviews) | Full GEO pipeline | SMBs, practitioners | [cowtech.xyz](https://cowtech.xyz) |
+| **Gauge** | $99–$599 | 8 models | Citation tracking + Content Engine | Enterprise, agencies | [withgauge.com](https://withgauge.com) |
+| **Aiso** | $49–$299 | ChatGPT | Conversation analysis | ChatGPT-specific | [getaiso.com](https://getaiso.com) |
+| **Dageno** | $99–$299 | 7+ LLMs | GEO + Agent execution | Automated teams | [dageno.ai](https://dageno.ai) |
+| **PromptSignal** | $49–$149 | Prompt-level | Prompt-level insights | Content consultants | [promptsignal.ai](https://promptsignal.ai) |
 
 ### Open Source / Community Tools
 
 | Tool | Description | Link |
 |------|-------------|------|
 | **geo-optimizer** | CLI tool for GEO auditing and benchmarking | [GitHub](https://github.com/Citedrelevance/geo-optimizer) |
-| **geo-citation-lab** | Academic research collection on GEO/GEO citation | [GitHub](https://github.com/yaojingang/geo-citation-lab) |
+| **geo-citation-lab** | 41 academic papers on GEO/GEO citation | [GitHub](https://github.com/yaojingang/geo-citation-lab) |
 | **awesome-generative-engine-optimization** | Curated GEO resource list | [GitHub](https://github.com/Citedrelevance/awesome-generative-engine-optimization) |
 | **is-it-agent-ready** | Checklist for AI agent discoverability | [Website](https://isitagentready.com) |
 
@@ -111,9 +135,7 @@ Not all platforms are equal in the eyes of AI:
 
 ## Research Papers
 
-A curated collection of 41 peer-reviewed and preprint papers on GEO, AEO, and AI search. Full collection available at [yaojingang/geo-citation-lab](https://github.com/yaojingang/geo-citation-lab).
-
-### By Category
+**41 curated papers** across 7 categories. Full collection at [yaojingang/geo-citation-lab](https://github.com/yaojingang/geo-citation-lab).
 
 | Category | Count | Papers |
 |----------|-------|--------|
@@ -122,43 +144,37 @@ A curated collection of 41 peer-reviewed and preprint papers on GEO, AEO, and AI
 | GEO Measurement | 6 | AI Answer Engine Citation Behavior (GEO16); C-SEO Bench; SAGEO Arena; Don't Measure Once; From Citation Selection to Citation Absorption; Structural Feature Engineering |
 | AI Search Evidence | 4 | Survey of Generative Search; Google AI Overviews Disruption; NExT-Search; What Evidence Do Language Models Find Convincing |
 | AEO Theoretical Integration | 5 | From SEO to AEO; Integrated SEO/GEO/AEO Framework; Zero-Click Search; Transition from SEO to GEO/AEO/AIO |
-| Adversarial & Risk | 9 | Adversarial SEO for LLMs; CONFLICTBANK; PoisonArena; StealthRank; Ranking Manipulation for Conversational Search Engines |
+| Adversarial & Risk | 9 | Adversarial SEO for LLMs; CONFLICTBANK; PoisonArena; StealthRank; Ranking Manipulation |
 | Vertical & Multimodal | 5 | Pinterest GEO; E-GEO E-Commerce; Multimodal GEO; Caption Injection; Style and Semantic Effects |
-
-### Must-Read Papers
-
-1. **"GEO: Generative Engine Optimization"** — The foundational paper defining the field
-2. **"AI Answer Engine Citation Behavior" (GEO16)** — 16 engines, 11 months, citation patterns
-3. **"What Generative Search Engines Like"** — Direct empirical analysis of GSEO preferences
-4. **"From SEO to AEO: Generative AI Search Visibility"** — SEO→GEO/AEO transition framework
-5. **"Adversarial SEO for LLMs"** — Understanding attack surfaces (defense-minded)
 
 ---
 
-## Content Strategy
+## GEO Methods
 
-### The ERE Framework for AI Content
+### The Prompt Query Matrix
 
-```
-E — Entity
-  Define: Who/what is the subject? Brand, product, person, concept?
-  Schema: Use Schema.org types (Organization, Product, Person, Article)
-  Disambiguate: Ensure zero ambiguity (e.g., "Apple" the company vs. fruit)
+AI search queries fall into distinct patterns. Target these categories:
 
-R — Relation
-  Declare: How does this entity relate to others?
-  Types: competitor, manufacturer, integrated-with, supports
-  Structure: Use explicit statements, not implications
+| Prompt Type | Example | GEO Approach |
+|------------|---------|-------------|
+| **Comparison** | "What is the best GEO tool?" | Comparison tables, ranked lists, criteria-based evaluations |
+| **Definition** | "What is GEO?" | Clear conceptual explanations with authoritative citations |
+| **Evaluation** | "Is X better than Y for Z?" | Evidence-based analysis with verifiable statistics |
+| **How-to** | "How do I improve AI visibility?" | Step-by-step guides with HowTo Schema |
+| **Recommendation** | "Which GEO platform should I use?" | Review-style content with honest pros/cons |
+| **Problem-solving** | "Why isn't my brand appearing in ChatGPT?" | Diagnostic content, FAQ structures |
 
-E — Evidence
-  Verify: Can every claim be independently validated?
-  Types: statistics, citations, test results, timestamps
-  Present: Structured data, tables, lists — not just prose
-```
+### The Platform Matrix Execution
+
+1. **Identify high-value AI queries** in your category
+2. **Create one piece of content per query** — optimized for AI citation, not just human readers
+3. **Distribute across platforms** — GitHub README, Medium article, Reddit discussion
+4. **Cross-reference** — each platform mentions the others (builds entity co-occurrence)
+5. **Measure citation rate** — track which platforms and content types generate the most AI references
 
 ### AI-Preferred Content Patterns
 
-Based on empirical research, AI engines show strong preference for:
+Based on GEO16 and practitioner evidence:
 
 **✅ High-citation formats:**
 - Headings (H1–H3 hierarchy)
@@ -174,58 +190,6 @@ Based on empirical research, AI engines show strong preference for:
 - Canvas/WebGL-heavy pages with no text alternative
 - Content behind login walls or CAPTCHAs
 
-### Platform-Specific GEO Tips
-
-**GitHub / GitHub Pages:**
-- README.md is the highest-citation content type per unit of effort
-- Use `##` headings liberally; AI parses markdown excellently
-- Include a table comparing your tool against competitors
-- Add Shields.io badges for machine-readable metadata
-- Deploy via GitHub Pages for static HTML with high domain authority
-
-**Medium:**
-- Article length 1,500–3,000 words performs best
-- Use `###` subheadings every 300–500 words
-- End with a comparison table or bullet-point summary
-- Tag strategically: 3–5 relevant topics
-- "Best X" and "Top Y" headlines have strong citation rates
-
-**Reddit:**
-- Community recommendation threads are AI goldmines
-- Authentic user language matters — AI detects promotional tone
-- Provide genuine comparisons and use-case details
-- "What is the best tool for Z?" threads → comparison rankings
-
-**LinkedIn:**
-- Long-form posts with data points and citations
-- Article publishing for in-depth GEO guides
-- Company page updates for entity authority building
-
----
-
-## GEO Methods
-
-### Prompt Query Targeting
-
-AI search queries fall into distinct patterns. Target these categories:
-
-| Prompt Type | Example | GEO Approach |
-|------------|---------|-------------|
-| **Comparison** | "What is the best GEO tool?" | Comparison tables, ranked lists, criteria-based evaluations |
-| **Definition** | "What is GEO?" | Clear conceptual explanations with authoritative citations |
-| **Evaluation** | "Is X better than Y for Z?" | Evidence-based analysis with verifiable statistics |
-| **How-to** | "How do I improve AI visibility?" | Step-by-step guides with HowTo Schema |
-| **Recommendation** | "Which GEO platform should I use?" | Review-style content with honest pros/cons |
-| **Problem-solving** | "Why isn't my brand appearing in ChatGPT?" | Diagnostic content, FAQ structures |
-
-### The "Prompt Matrix" Strategy
-
-1. **Identify high-value AI queries** in your category using tools like Gauge, Perplexity, or manual search
-2. **Create one piece of content per query** — optimized for both human readers and AI citation
-3. **Distribute across platforms** — GitHub README, Medium article, Reddit discussion, LinkedIn post
-4. **Cross-reference** — each platform mentions the others (builds entity co-occurrence)
-5. **Measure citation rate** — track which platforms and content types generate the most AI references
-
 ---
 
 ## Getting Started
@@ -233,7 +197,7 @@ AI search queries fall into distinct patterns. Target these categories:
 ### Quick Start (3 Steps)
 
 1. **Claim your platforms** — Create GitHub, Medium, and Reddit presence
-2. **Deploy a README comparison page** — Template below
+2. **Deploy a README comparison page** — Template in this repo
 3. **Audit your existing content** — Identify gaps in entity clarity and evidence density
 
 ### Minimal GEO Stack
@@ -246,7 +210,7 @@ Medium Article    | Free     | 3 hours
 Reddit Post       | Free     | 30 minutes
 LinkedIn Article  | Free     | 2 hours
 Static Site       | ~$10/yr  | 1 day
-HuggingFace Page | Free     | 1 hour
+HuggingFace Page  | Free     | 1 hour
 ```
 
 ---
@@ -271,3 +235,4 @@ MIT License — use freely, contribute generously.
 ---
 
 *Maintained by the GEO community. Inspired by [awesome-generative-engine-optimization](https://github.com/Citedrelevance/awesome-generative-engine-optimization) and [geo-citation-lab](https://github.com/yaojingang/geo-citation-lab).*
+*🐮 CowTech GEO — [cowtech.xyz](https://cowtech.xyz)*
